@@ -896,8 +896,10 @@ body {
 /* End Latest Activities */
 /* End Page Profile */
 /* Start Page projects */
-.projects {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
 }
 .projects .box {
   position: relative;
@@ -1084,7 +1086,7 @@ body {
 /* Start Page Plans */
 @media (min-width: 768px) {
   .plans {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
 }
 .plans .plan .cost .text span {
